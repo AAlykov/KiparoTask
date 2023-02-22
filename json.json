@@ -1,0 +1,66 @@
+{
+  "name": "Super duper news",
+  "location": "Minks",
+  "news": [
+      {
+        "id": 0,
+        "title": "Apple, IBM to bring iPads to 5 million Japanese seniors",
+        "description": "An initiative between Apple, IBM and Japan Post Holdings could put iPads in the hands of up to 5 million members of Japan's elderly population.",
+        "date": "2014-10-25 12:35:00 +0300",
+        "keywords": [
+    		  "apple",
+     		  "ibm"
+         ],
+         "visible": true
+      },
+      {
+        "id": 1,
+        "title": "New Chrome extension aims to protect Google passwords, foil phishers",
+        "description": "Google today released a new extension for its Chrome browser that aims to improve Google account security for consumers and enterprise customers. The Password Alert extension discourages people from reusing their Google passwords on other sites and notifies them of potential phishing attacks. In other words, Google wants to help you help yourself.",
+        "date": "2014-03-04 22:17:00 +0300",
+        "keywords": [
+    		  "google"
+         ],
+         "visible": true
+      },
+	  {
+        "id": 2,
+        "description": "BMW this week showed off prototype augmented reality (AR) glasses designed to improve and enhance the driving experience in its fleet of MINI vehicles at the Auto Shanghai 2015 show in China. BMW's MINI subsidiary announced the concept smartglasses earlier this month, but it hadn't publicly demonstrated the device until this week.",
+        "date": "2014-04-10 17:30:00 +0200",
+        "keywords": [
+    		  "bmw"
+         ],
+         "visible": true
+      },
+      {
+        "id": 3,
+        "title": "Apple Watch as fitness tracker: Putting Activity and Workout through their paces",
+        "description": "No one is going to buy an Apple Watch just to replace their (much cheaper) fitness tracker, but if you shell out $350+ for Apple's latest device, it needs to perform better than a Fitbit, Jawbone, or Basis Peak. Who's going to strap two bands to their wrist to count steps? Fortunately the Apple Watch isn't just a capable health and fitness band: It's downright amazing, though, like every other facet of the watch, it has room for improvement.",
+        "date": "2014-02-12 10:00:00 +0300",
+        "keywords": [
+    		  "apple"
+         ],
+         "visible": true
+      },
+      {
+        "id": 4,
+        "title": "Microsoft to offer three new ways to store big data on Azure",
+        "description": "Microsoft will soon offer three additional ways for enterprises to store data on Azure, making the cloud computing platform more supportive of big data analysis.",
+        "date": "2014-03-30 22:20:00 +0300",
+        "keywords": [
+    		  "microsoft",
+     		  "azure"
+         ],
+         "visible": true
+      },
+      {
+        "id": 5,
+        "title": "Microsoft helps developers gear Windows 10 for the post-PC era",
+        "description": "Microsoft is supporting cross-platform development like never before, introducing tools to port iOS and Android apps to Windows and allow software to run across multiple form factors, from smart phones to virtual reality headsets",
+        "date": "2015-05-02 11:15:00 +0300",
+        "keywords": [
+         ],
+         "visible": true
+      }
+    ]
+}
