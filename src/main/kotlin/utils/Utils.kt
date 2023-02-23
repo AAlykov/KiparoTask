@@ -16,7 +16,6 @@ const val TAG_NEWS = "news"
 const val HTTP_XML = "https://api2.kiparo.com/static/it_news.xml"
 const val HTTP_JSON = "https://api2.kiparo.com/static/it_news.json"
 
-
 fun printlnError(str: String) {
     println(CONSOLE_COLOR_ERROR + str + CONSOLE_COLOR_RESET)
     println("$CONSOLE_COLOR_ERROR---------------------------------------------------$CONSOLE_COLOR_RESET")
@@ -32,4 +31,4 @@ fun beautifulDateFun(zonedDateTime: ZonedDateTime): String {
     return date.toString()
 }
 
-
+data class ShowNews(val id: String, val title: String, val zonedDateTime: ZonedDateTime, val description: String, val visible: String, val keywords: List<String>)

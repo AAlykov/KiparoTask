@@ -5,9 +5,9 @@ import java.io.File
 import java.net.HttpURLConnection
 import java.net.URL
 
-class DownloadData(private val path: String, private val downloadFile: String ) {
+class DownloadData(private val path: String, private val downloadFile: String) {
 
-    fun downloadData() {
+    fun downloadData(): Boolean {
         println("Скачиваем $path ...")
 
         val url = URL(path)
@@ -31,11 +31,14 @@ class DownloadData(private val path: String, private val downloadFile: String ) 
                 }
                 else -> {
                     println("Неизвестный путь $path для скачивания")
+                    return false
                 }
             }
 
         } else {
-            printlnError("HTTP_URL_CONNECTION_ERROR $responseCode")
+            printlnError ("HTTP_URL_CONNECTION_ERROR $responseCode")
+            return false
         }
+        return true
     }
 }

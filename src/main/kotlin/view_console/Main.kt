@@ -1,3 +1,5 @@
+package view_console
+
 import data.RepositoryImpl
 import domain.models.RootModel
 import domain.usecase.GetDataUseCase
@@ -75,8 +77,6 @@ fun workWithRootModel(rootModel: RootModel) {
 
     //val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss Z")
     val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss Z")
-
-    data class ShowNews(val id: String, val title: String, val zonedDateTime: ZonedDateTime, val description: String, val visible: String, val keywords: List<String>)
 
     val mListOfShowNews = mutableListOf<ShowNews>()
     newsModels.forEach {
