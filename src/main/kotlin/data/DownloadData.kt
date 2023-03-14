@@ -22,7 +22,11 @@ class DownloadData(private val path: String, private val downloadFile: String) {
             }
             when(path) {
                 HTTP_XML -> {
+                    // Что если исключение? Например, не хватает места?
                     File(downloadFile).writeText(response)
+                    // Лучше отсуда не делать вывод, потому что мы уже далеко от UI
+                    // Нам нужно возвращать результат работы лишь, а затем обрабатывать его
+                   // через домен в UI, тоже самое для остальных
                     printlnSuccess ("Скачали в $downloadFile ...")
                 }
                 HTTP_JSON -> {
