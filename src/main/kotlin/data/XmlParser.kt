@@ -15,6 +15,7 @@ import javax.xml.parsers.ParserConfigurationException
 
 class XmlParser() {
 
+    // Просто нужно выбрасывать исключения наружу
     fun buildDocument(parseFile: String): Document? {
         val builderFactory = DocumentBuilderFactory.newInstance()
         return try {
