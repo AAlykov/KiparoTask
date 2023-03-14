@@ -31,4 +31,5 @@ fun beautifulDateFun(zonedDateTime: ZonedDateTime): String {
     return date.toString()
 }
 
+// Модель лучше в отдельный класс
 data class ShowNews(val id: String, val title: String, val zonedDateTime: ZonedDateTime, val description: String, val visible: String, val keywords: List<String>)
