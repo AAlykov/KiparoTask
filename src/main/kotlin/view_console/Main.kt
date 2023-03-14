@@ -22,6 +22,8 @@ fun main(args: Array<String>) {
 
     var formatVariant: String
     while (true) {
+        //Павел: Все тексты лучше вынести в константы, учитывая, что они также часто повторяются
+        //Например internal const PRESSED_1 = "Нажали 1"
         println("Главное меню")
         println("Для скачивания данных или выхода из программы нажмите соответсвующую клавишу:\n 1 - JSON-формат\n 2 - XML-формат\n 3 - выход")
         formatVariant = readln()
@@ -33,6 +35,7 @@ fun main(args: Array<String>) {
                 val getDataUseCase = GetDataUseCase(repositoryImpl)
                 val rootModel: RootModel? = getDataUseCase.getData(HTTP_JSON)
                 if (rootModel != null) {
+                    // Павел: Этот блок можно вынести в отсдельную функцию, он повторяется 
                     println("Объект готов для работы:")
                     println(rootModel.toString())
                     workWithRootModel(rootModel)
