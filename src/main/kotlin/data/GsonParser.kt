@@ -13,6 +13,9 @@ class GsonParser {
             //println(rootModel.toString())
             rootModel
         } catch (e: Exception) {
+            // Лучше отсуда не делать вывод, потому что мы уже далеко от UI
+            // Нам нужно возвращать результат работы лишь, а затем обрабатывать его
+            // через домен в UI, тоже самое для остальных
             printlnError(e.toString())
             null
         }
